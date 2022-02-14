@@ -1,5 +1,5 @@
 {
-  "name": "pimcore/web2print-tools-bundle",
+  "name": "alpin11/web2print-tools-bundle",
   "type": "pimcore-bundle",
   "license": "GPL-3.0+",
   "config": {
