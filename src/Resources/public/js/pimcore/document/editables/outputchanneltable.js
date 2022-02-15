@@ -20,7 +20,6 @@ pimcore.document.editables.outputchanneltable = Class.create(pimcore.document.ed
     outputChannel: null,
     documentId: null,
     outputChannelName: null,
-    allowedOperators: ['Concatenator','Group','Text'],
 
 
     initialize: function(id, name, options, data, inherited) {
@@ -436,7 +435,7 @@ pimcore.document.editables.outputchanneltable = Class.create(pimcore.document.ed
 
     openConfigDialog: function() {
         var outputChannel = this.createOrGetOutputChannel();
-        var dialog = new window.parent.pimcore.bundle.outputDataConfigToolkit.OutputDataConfigDialog(outputChannel, this.saveConfigDialog.bind(this), this.allowedOperators);
+        var dialog = new window.parent.pimcore.bundle.outputDataConfigToolkit.OutputDataConfigDialog(outputChannel, this.saveConfigDialog.bind(this));
     },
 
     saveConfigDialog: function(data) {
